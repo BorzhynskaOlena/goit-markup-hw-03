@@ -8,6 +8,7 @@
   --main-background-color: #ffffff;
   --secondary-background-color: #2f303a;
   --background-btn-color: #f5f4fa;
+  --team-background-color: #f5f4fa;
   --logo-header-color: #000000;
 }
 h1,
@@ -160,6 +161,9 @@ body {
 .work {
   padding-top: 0;
 }
+.team {
+  background-color: var(--team-background-color);
+}
 .work-title,
 .team-title {
   font-weight: 700;
@@ -242,7 +246,9 @@ body {
 }
 
 /* ---------------ПОРТФОЛИО -----------------*/
-
+.portfolio-btn-list {
+  margin-bottom: 50px;
+}
 .portfolio-btn {
   font-family: inherit;
   font-weight: 500;
@@ -259,7 +265,8 @@ body {
   border: transparent;
 }
 .portfolio-btn:hover,
-.portfolio-btn:focus {
+.portfolio-btn:focus,
+.current-portfolio-btn {
   color: var(--minor-text-color);
   background-color: var(--accent-color);
 }
